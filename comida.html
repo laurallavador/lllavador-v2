@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No Hay Vida Sin Comida — Food Delivery UX | Laura Llavador</title>
+<meta name="description" content="No Hay Vida Sin Comida — user-centered food delivery app. UX/UI case study by Laura Llavador.">
+<meta name="theme-color" content="#0B110D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="progress"><i></i></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="frond-art">
+      <path d="M111 316 C104 240 117 150 108 26" stroke="#8E9B52" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M109 64 Q64 36 30 54 Q68 74 109 70 Z" fill="#2D5C46"/>
+      <path d="M111 86 Q158 58 190 76 Q154 96 111 92 Z" fill="#24503C"/>
+      <path d="M109 116 Q60 90 26 108 Q66 128 109 122 Z" fill="#3A6B4F"/>
+      <path d="M111 144 Q160 118 194 136 Q156 156 111 150 Z" fill="#2D5C46"/>
+      <path d="M110 174 Q62 150 30 166 Q68 186 110 180 Z" fill="#24503C"/>
+      <path d="M112 202 Q158 178 190 194 Q154 214 112 208 Z" fill="#3A6B4F"/>
+      <path d="M110 232 Q66 210 36 224 Q70 242 110 238 Z" fill="#2D5C46"/>
+      <path d="M112 258 Q154 238 184 252 Q150 270 112 264 Z" fill="#24503C"/>
+      <path d="M108 30 Q116 8 134 4 Q122 24 110 40 Z" fill="#3A6B4F"/>
+      <circle cx="120" cy="122" r="5" fill="#DE7549"/>
+      <circle cx="100" cy="198" r="4" fill="#E8A64C"/>
+    </g>
+  </defs>
+</svg>
+
+<header class="nav" id="nav">
+  <a class="logo" href="index.html">laura<span class="star">✺</span>llavador</a>
+  <nav class="nav-links">
+    <a href="index.html#about">About</a>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#journey">Journey</a>
+  </nav>
+  <a class="nav-cta magnetic" href="#contact">Let's connect <span class="arr">→</span></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<nav class="mmenu" id="mmenu">
+  <a href="index.html#about"><i>01</i> About</a>
+  <a href="index.html#work"><i>02</i> Work</a>
+  <a href="index.html#journey"><i>03</i> Journey</a>
+  <a href="#contact"><i>04</i> Contact</a>
+</nav>
+
+<main id="top">
+
+<!-- ================= PROJECT HERO ================= -->
+<section class="pp-hero" id="hero">
+  <div class="grid-lines"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="frond" style="right:-40px;top:140px;width:170px;transform:scaleX(-1) rotate(16deg);opacity:.5">
+    <svg viewBox="0 0 220 320"><use href="#frond-art"/></svg>
+  </div>
+  <span class="ff" style="left:12%;top:36%;animation-duration:12s,3.2s;animation-delay:-4s,-1s"></span>
+  <span class="ff" style="left:70%;top:22%;animation-duration:10s,2.7s;animation-delay:-2s,-.6s"></span>
+
+  <div class="container">
+    <a class="back reveal" href="index.html#work">← Back to projects</a>
+    <p class="eyebrow">Case study 03 — No Hay Vida Sin Comida</p>
+    <h1 class="pp-title">User-centered <em>food delivery</em> experience</h1>
+    <div class="pp-tags">
+      <span class="tag">Mobile App</span><span class="tag">Food Delivery</span><span class="tag">UCD</span><span class="tag tag-hot">UX/UI Case study</span>
+    </div>
+    <p class="pp-intro">
+      A user-centered design project for a food delivery app, built around the idea that
+      <strong>it's a pleasure having good food whenever you prefer</strong>. The goal: an intuitive,
+      engaging and seamless experience that meets users' real needs and habits when ordering food online.
+    </p>
+    <dl class="pp-meta" data-stagger>
+      <div class="pm reveal"><dt>Role</dt><dd>UX/UI Designer</dd></div>
+      <div class="pm reveal"><dt>Approach</dt><dd>User-Centered Design</dd></div>
+      <div class="pm reveal"><dt>Platform</dt><dd>Mobile app</dd></div>
+      <div class="pm reveal"><dt>Tools</dt><dd>Figma</dd></div>
+    </dl>
+    <div class="hero-ctas reveal" style="margin-top:34px">
+      <a class="btn btn-primary magnetic" href="https://www.figma.com/file/KXexzQclgHFABuZZNzE1kl?type=design&node-id=8%3A39&mode=design" target="_blank" rel="noopener">Go to the prototype <span class="arr">↗</span></a>
+    </div>
+    <div class="pp-hero-img reveal">
+      <img src="https://www.laurallavador.com/images/comida/comidamain.png" alt="No Hay Vida Sin Comida app overview" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span>Buen Provecho</span><i>✺</i><span>User Personas</span><i>✺</i>
+      <span>Card Sorting</span><i>✺</i><span>User Journeys</span><i>✺</i>
+      <span>Mobile UX</span><i>✺</i><span>Food Delivery</span><i>✺</i>
+    </div>
+    <div class="marquee-group">
+      <span>Buen Provecho</span><i>✺</i><span>User Personas</span><i>✺</i>
+      <span>Card Sorting</span><i>✺</i><span>User Journeys</span><i>✺</i>
+      <span>Mobile UX</span><i>✺</i><span>Food Delivery</span><i>✺</i>
+    </div>
+  </div>
+</div>
+
+<!-- ================= GOAL ================= -->
+<section>
+  <span class="sec-num">01</span>
+  <div class="container">
+    <p class="sec-label reveal">01 — User-centered design</p>
+    <p class="statement reveal">
+      What do we want to solve? An app that adapts in a novel way to each user's
+      <em>individual preferences</em> and needs — offering a unique and innovative
+      <span class="hl">gastronomic experience</span> like never before.
+    </p>
+  </div>
+</section>
+
+<!-- ================= METHODOLOGY ================= -->
+<section style="background:var(--bg-2);border-block:1px solid var(--line);padding-top:90px">
+  <span class="sec-num">02</span>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-label">02 — Methodology</p>
+        <h2 class="sec-title">Four phases, <em>one focus</em></h2>
+      </div>
+    </div>
+    <div class="steps steps-4" data-stagger>
+      <div class="step reveal">
+        <span class="step-num">1</span>
+        <h4>Investigation</h4>
+        <p>Understanding the food delivery landscape and real user habits.</p>
+        <div class="mini"><span>Desk research</span><span>Benchmarking</span><span>Surveys</span></div>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">2</span>
+        <h4>Definition</h4>
+        <p>Turning findings into actionable design foundations.</p>
+        <div class="mini"><span>Personas</span><span>Scenarios</span><span>User journeys</span><span>Lean UX canvas</span></div>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">3</span>
+        <h4>Design</h4>
+        <p>From structure to high-fidelity, iterating at every step.</p>
+        <div class="mini"><span>Card sorting</span><span>Treemap</span><span>Sketching</span><span>Wireframe</span><span>Prototype</span></div>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">4</span>
+        <h4>Evaluation</h4>
+        <p>Validating the experience with real users and data.</p>
+        <div class="mini"><span>Heuristic evaluation</span><span>User testing</span><span>User analytics</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH ARTIFACTS ================= -->
+<section>
+  <span class="sec-num">03</span>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-label">03 — Research</p>
+        <h2 class="sec-title">User <em>personas</em></h2>
+      </div>
+    </div>
+    <div class="grid-3" data-stagger>
+      <figure class="pp-figure reveal"><img src="https://www.laurallavador.com/images/comida/user1.png" alt="User persona 1" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="pp-figure reveal"><img src="https://www.laurallavador.com/images/comida/user2.png" alt="User persona 2" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="pp-figure reveal"><img src="https://www.laurallavador.com/images/comida/user3.png" alt="User persona 3" loading="lazy" onerror="this.style.display='none'"></figure>
+    </div>
+
+    <div class="sec-head reveal" style="margin-top:90px">
+      <div>
+        <p class="sec-label">04 — Architecture</p>
+        <h2 class="sec-title">Card sorting &amp; <em>user journeys</em></h2>
+      </div>
+    </div>
+    <div class="tools reveal" data-stagger style="margin-bottom:34px">
+      <span class="tool reveal">Carrito de la compra</span><span class="tool reveal">Programar pedido</span>
+      <span class="tool reveal">Detalles del pedido</span><span class="tool reveal">Menú personalizado</span>
+      <span class="tool reveal">Recomendar</span><span class="tool reveal">Carta personalizada</span>
+      <span class="tool reveal">Restaurantes</span><span class="tool reveal">Categorías de comida</span>
+      <span class="tool reveal">Descuentos y promociones</span><span class="tool reveal">Chat</span>
+      <span class="tool reveal">Niveles de usuario</span><span class="tool reveal">Métodos de pago</span>
+      <span class="tool reveal">Ubicación</span>
+    </div>
+    <div class="grid-3" data-stagger>
+      <figure class="pp-figure reveal"><img src="https://www.laurallavador.com/images/comida/journey1.png" alt="User journey 1" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="pp-figure reveal"><img src="https://www.laurallavador.com/images/comida/journey2.png" alt="User journey 2" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="pp-figure reveal"><img src="https://www.laurallavador.com/images/comida/journey3.png" alt="User journey 3" loading="lazy" onerror="this.style.display='none'"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL SCREENS ================= -->
+<section style="background:var(--bg-2);border-block:1px solid var(--line)">
+  <span class="sec-num">04</span>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-label">05 — The solution</p>
+        <h2 class="sec-title">Final <em>screens</em></h2>
+      </div>
+      <a class="sec-link" href="https://www.figma.com/file/KXexzQclgHFABuZZNzE1kl?type=design&node-id=8%3A39&mode=design" target="_blank" rel="noopener">Open prototype ↗</a>
+    </div>
+    <div class="screens reveal">
+      <figure><img src="https://www.laurallavador.com/images/comida/INICIO.png" alt="App screen — inicio" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+      <figure><img src="https://www.laurallavador.com/images/comida/INTRO.png" alt="App screen — intro" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+      <figure><img src="https://www.laurallavador.com/images/comida/REGISTRATE.png" alt="App screen — regístrate" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+      <figure><img src="https://www.laurallavador.com/images/comida/DESCUBRE%201%20-%20INICIO%201.png" alt="App screen — descubre" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+      <figure><img src="https://www.laurallavador.com/images/comida/HOME%20PRINCIPAL.png" alt="App screen — home" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+      <figure><img src="https://www.laurallavador.com/images/comida/RESTAURANTES%201.png" alt="App screen — restaurantes" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+      <figure><img src="https://www.laurallavador.com/images/comida/DELICIAS%20DE%20AM%C3%89RICA%201.png" alt="App screen — delicias de América" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+      <figure><img src="https://www.laurallavador.com/images/comida/PEDIDO%201.png" alt="App screen — pedido" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+      <figure><img src="https://www.laurallavador.com/images/comida/PEDIDO%203.png" alt="App screen — pedido confirmado" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+    </div>
+    <p class="drag-hint">( drag / scroll → )</p>
+  </div>
+</section>
+
+<!-- ================= NEXT PROJECT ================= -->
+<section style="padding-bottom:0">
+  <div class="container">
+    <a class="next reveal" href="compressflow.html">
+      <div>
+        <span class="nx-label">Next project — 04</span>
+        <h3>Image optimization for a faster Webflow</h3>
+      </div>
+      <span class="card-cta">↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="compact">
+  <div class="sunset"></div>
+  <span class="ff" style="left:22%;top:34%;animation-duration:12s,3.2s;animation-delay:-4s,-1s"></span>
+  <span class="ff" style="left:74%;top:28%;animation-duration:10s,2.6s;animation-delay:-2s,-.5s"></span>
+  <span class="ff" style="left:56%;top:60%;animation-duration:14s,3.8s;animation-delay:-7s,-1.9s"></span>
+  <div class="container contact-inner">
+    <p class="sec-label contact-label reveal">Contact</p>
+    <h2 class="contact-title reveal">Let's make something <em>a little bit magical</em></h2>
+    <div class="contact-ctas reveal">
+      <a class="btn btn-sand magnetic" href="mailto:lauxllavador@gmail.com">lauxllavador@gmail.com <span class="arr">↗</span></a>
+      <a class="btn btn-line magnetic" href="index.html">Back to home <span class="arr">→</span></a>
+    </div>
+    <div class="contact-meta reveal">
+      <a href="https://www.linkedin.com/in/laurallavadorgarcia/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://www.behance.net/laurallavador" target="_blank" rel="noopener">Behance ↗</a>
+      <span>Valencia, Spain</span>
+    </div>
+  </div>
+  <footer>
+    <div class="container foot-inner">
+      <span>© 2026 Laura Llavador — All rights reserved</span>
+      <span>Hecho entre el bosque y el mar <span class="star">✺</span> 39.47° N</span>
+    </div>
+  </footer>
+</section>
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>
