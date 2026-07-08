@@ -124,15 +124,15 @@
         </ul>
       </div>
       <figure class="pp-figure split-img reveal">
-        <img src="https://www.laurallavador.com/images/np1.png" alt="NextPort design system" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>Design system — components &amp; accessibility</figcaption>
+        <img src="asset/nextport/design-system-colors.png" alt="NextPort design system — color tokens, neutrals and semantic palettes" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>Design system — color tokens &amp; semantic palettes</figcaption>
       </figure>
     </div>
 
     <div class="split">
       <figure class="pp-figure split-img reveal">
-        <img src="https://www.laurallavador.com/images/np2.png" alt="NextPort adaptive dashboards" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>Personalized dashboards — real-time data</figcaption>
+        <img src="asset/nextport/leaniq-analyzer.png" alt="LeanIQ Analyzer — asset performance distribution dashboard with real-time KPIs" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>LeanIQ Analyzer — asset performance &amp; root-cause analysis</figcaption>
       </figure>
       <div class="reveal">
         <span class="kicker">02 — Data-driven decisions</span>
@@ -165,9 +165,125 @@
   </div>
 </section>
 
-<!-- ================= PROCESS ================= -->
+<!-- ================= INSIDE THE PRODUCT ================= -->
 <section style="background:var(--bg-2);border-block:1px solid var(--line)">
   <span class="sec-num">02</span>
+  <div class="container">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sec-label">Inside the product</p>
+        <h2 class="sec-title">The screens behind <em>the platform</em></h2>
+      </div>
+      <p style="max-width:36ch;color:var(--ink-soft);font-weight:300;font-size:.95rem">A tour through the core modules I designed — from live port maps to AI-assisted berth planning and smart operational alarms.</p>
+    </div>
+
+    <div class="split first">
+      <div class="reveal">
+        <span class="kicker">Top View — Live port map</span>
+        <h3>A real-time digital twin of the port</h3>
+        <p>The heart of NextPort: a live map where every vessel, resource and service is tracked in real time. Selecting a vessel opens its full event timeline — departures, arrivals, anchorage — enriched with <strong>AI-powered ETAs and delay forecasts</strong>, so operators always know what is happening and what comes next.</p>
+        <ul class="check">
+          <li>Live vessel tracking with speed, route trace and status at a glance</li>
+          <li>Event timeline blending confirmed data with AI forecasts</li>
+          <li>Time machine playback to navigate past and predicted states</li>
+        </ul>
+      </div>
+      <figure class="pp-figure split-img reveal">
+        <img src="asset/nextport/topview-vessel-events.png" alt="NextPort Top View — live port map with vessel detail panel showing events and AI forecasts" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>Top View — vessel detail with events &amp; AI forecasts</figcaption>
+      </figure>
+    </div>
+
+    <div class="split">
+      <figure class="pp-figure split-img reveal">
+        <img src="asset/nextport/terminal-map.png" alt="NextPort terminal map — yard and quay cranes monitored in real time" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>Terminal map — yard &amp; quay cranes in real time</figcaption>
+      </figure>
+      <div class="reveal">
+        <span class="kicker">Top View — Terminal operations</span>
+        <h3>Terminal operations, down to every crane</h3>
+        <p>Zooming into the terminal reveals a second layer of the digital twin: quay cranes, yard cranes and terminal trucks moving live over the berth. Color-coded states (active, alarm, logged off) let supervisors spot bottlenecks instantly without leaving the map.</p>
+        <ul class="check">
+          <li>Equipment status legible at any zoom level</li>
+          <li>Alarm states surfaced directly on the map, in context</li>
+          <li>Unified timeline to replay any moment of the operation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="reveal">
+        <span class="kicker">Port Call Schedule</span>
+        <h3>Every port call, at a glance</h3>
+        <p>A kanban-style board that turns the chaos of daily port traffic into three clear columns — arrivals, at port, departures. Each card condenses the essentials of a visit: vessel, route, agent, authorization status and live ETA/ETD, with weather and tide conditions always visible in the header.</p>
+        <ul class="check">
+          <li>Board and table views for different working styles</li>
+          <li>Status system designed for instant scanning (authorized, cancelled, accepted)</li>
+          <li>Contextual weather alerts affecting berthing decisions</li>
+        </ul>
+      </div>
+      <figure class="pp-figure split-img reveal">
+        <img src="asset/nextport/port-call-schedule.png" alt="NextPort Port Call Schedule — kanban board with arrivals, at port and departures columns" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>Port Call Schedule — arrivals · at port · departures</figcaption>
+      </figure>
+    </div>
+
+    <div class="split">
+      <figure class="pp-figure split-img reveal">
+        <img src="asset/nextport/berth-planner-predictions.png" alt="NextPort Berth Planner — day view with AI predictions enabled across berths" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>Berth Planner — AI predictions layered over the plan</figcaption>
+      </figure>
+      <div class="reveal">
+        <span class="kicker">Port Call Viewer — Berth Planner</span>
+        <h3>AI-assisted berth planning</h3>
+        <p>A calendar of the port's berths where planners allocate vessel visits. Flipping the <strong>Predictions toggle</strong> overlays AI-suggested slots on top of the confirmed plan — clearly differentiated with a dashed visual language so human decisions and machine suggestions never get confused.</p>
+        <ul class="check">
+          <li>Day, week and month granularity over every berth</li>
+          <li>Distinct visual grammar separating confirmed visits from predictions</li>
+          <li>Unallocated vessels queue keeping nothing off the radar</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="reveal">
+        <span class="kicker">Berthing — Trade Off</span>
+        <h3>Resolving berthing conflicts with AI</h3>
+        <p>The most complex problem in the product: when several vessels compete for the same berth, tugs or anchorage, the Trade Off view lays every movement on a shared timeline and exposes the <strong>constraints behind each AI recommendation</strong> — number of tugs, anchorage capacity, tidal windows — so planners can understand, trust and adjust the outcome.</p>
+        <ul class="check">
+          <li>Timeline of stops and movements per vessel, past and future</li>
+          <li>Conflict filter isolating only the decisions that need attention</li>
+          <li>Explainable constraints building trust in AI suggestions</li>
+        </ul>
+      </div>
+      <figure class="pp-figure split-img reveal">
+        <img src="asset/nextport/trade-off.png" alt="NextPort Trade Off — vessel movements timeline used to resolve berthing conflicts" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>Trade Off — berthing decisions on a shared timeline</figcaption>
+      </figure>
+    </div>
+
+    <div class="split">
+      <figure class="pp-figure split-img reveal">
+        <img src="asset/nextport/flowops-alarms.png" alt="NextPort FlowOps — active alarms list with priorities, elapsed time and assigned roles" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>FlowOps — prioritized operational alarms</figcaption>
+      </figure>
+      <div class="reveal">
+        <span class="kicker">FlowOps — Smart alarms</span>
+        <h3>From data noise to actionable alarms</h3>
+        <p>FlowOps watches the whole operation and raises an alarm only when a pattern deserves attention — excessive idling, order assignment delays, slow driving. Each alarm arrives prioritized, timed and <strong>routed to the right role</strong> (dispatcher, fleet controller, shift manager), turning monitoring into action.</p>
+        <ul class="check">
+          <li>Priority system tuned to minimize alert fatigue</li>
+          <li>Role-based routing so every alarm has an owner</li>
+          <li>Historical view and fully configurable alarm rules</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section>
+  <span class="sec-num">03</span>
   <div class="container">
     <div class="sec-head reveal">
       <div>
@@ -218,8 +334,8 @@
 </section>
 
 <!-- ================= UX TOOLKIT ================= -->
-<section>
-  <span class="sec-num">03</span>
+<section style="background:var(--bg-2);border-block:1px solid var(--line)">
+  <span class="sec-num">04</span>
   <div class="container">
     <div class="sec-head reveal">
       <div>
