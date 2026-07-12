@@ -6,7 +6,6 @@
 <title>Kimera Technologies — AI Ecommerce Search | Laura Llavador</title>
 <meta name="description" content="Kimera Technologies. AI-powered ecommerce search and conversational shopping assistant.">
 <meta name="theme-color" content="#F7F2E7">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -19,11 +18,10 @@
 
 
 
-<header class="nav" id="nav">
-  <a class="logo" href="index.html">laurallavador</a>
-
+<header class="nav nav-simple" id="nav">
+  <a class="nav-back" href="index.html#work"><span class="arr">←</span> <span class="nav-back-label">Back to projects</span></a>
   <a class="nav-cta magnetic" href="#contact">Let's connect <span class="arr">→</span></a>
-  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <button class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode"><span class="knob"><svg class="tt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5 5l1.6 1.6M17.4 17.4L19 19M19 5l-1.6 1.6M6.6 17.4L5 19"/></svg><svg class="tt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 14.2A8.5 8.5 0 1 1 9.8 3.4a7 7 0 1 0 10.8 10.8Z"/></svg></span></button>
 </header>
 
 <main id="top">
@@ -37,7 +35,6 @@
   <span class="ff" style="left:70%;top:24%;animation-duration:10s,2.7s;animation-delay:-2s,-.6s"></span>
 
   <div class="container">
-    <a class="back reveal" href="index.html#work">← Back to projects</a>
     <h1 class="pp-title">Reinventing how people <em>search and shop</em> online</h1>
     <div class="pp-tags">
       <span class="tag">Ecommerce SaaS</span><span class="tag">AI Search</span><span class="tag">Conversational UX</span><span class="tag tag-hot">2026 — Now</span>
@@ -56,7 +53,7 @@
       <div class="pm reveal"><dt>Sector</dt><dd>Ecommerce · AI SaaS</dd></div>
     </dl>
     <div class="pp-hero-img reveal">
-      <img src="asset/kimera/purplantmonstera.png" alt="Kimera AI search experience live at Perfumería Júlia — natural language results with the conversational shopping assistant open" onerror="this.style.display='none'">
+      <img src="asset/kimera/greenicemain.png" alt="Kimera AI search experience live at Perfumería Júlia — natural language results with the conversational shopping assistant open" onerror="this.style.display='none'">
     </div>
   </div>
 </section>
@@ -85,7 +82,7 @@
       <div class="reveal">
         <span class="kicker">01 — The vision</span>
         <h3>Search that understands people, not keywords</h3>
-        <p>Traditional store search expects shoppers to guess the right keywords — and punishes them with zero results when they don't. Kimera flips that logic: ask for <em>"a gift for my mother under 50 euros"</em> and the engine understands the intent, the occasion and the budget, returning products that actually make sense. That shift is redefining what a search bar can be.</p>
+        <p>Traditional store search expects shoppers to guess the right keywords, and punishes them with zero results when they don't. Kimera flips the logic, and the engine understands the intent, the occasion and the budget, returning products that actually make sense. That shift is redefining what a search bar can be.</p>
         <ul class="check">
           <li>Natural language queries instead of exact keyword matching</li>
           <li>Understands products from text and images, with no manual setup</li>
@@ -93,20 +90,20 @@
         </ul>
       </div>
       <figure class="pp-figure split-img reveal">
-        <img src="asset/kimera/julia-natural-language.png" alt="Kimera search understanding the query 'regalo para mi madre por menos de 50 euros' and returning Mother's Day gift packs" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>Semantic search in production — intent, occasion &amp; budget understood</figcaption>
+        <img src="asset/kimera/julia-natural-language.png" alt="PerfumeriaJulia" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>Semantic search in production. Intent, occasion &amp; budget understood</figcaption>
       </figure>
     </div>
 
     <div class="split">
       <figure class="pp-figure split-img reveal">
-        <img src="asset/kimera/pdp.png" alt="Kimera conversational shopping assistant panel — an AI guide that recommends, answers and refines results" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>The conversational shopping assistant, embedded in the store</figcaption>
+        <img src="asset/kimera/pdp.png" alt="Kimera feature for product detail page" loading="lazy" onerror="this.style.display='none'">
+        <figcaption>The conversational shopping assistant, embedded in the product detail page</figcaption>
       </figure>
       <div class="reveal">
         <span class="kicker">02 — Conversational commerce</span>
         <h3>A shopping assistant that talks with you</h3>
-        <p>Beyond the search bar, I design the <strong>conversational AI shopping assistant</strong>: a guide that recommends products, answers questions and refines results through dialogue — asking clarifying questions the way a great shop assistant would. Reasoned recommendations reduce indecision and turn browsing into finding.</p>
+        <p>Beyond the search bar, I design the <strong>conversational AI shopping assistant</strong>: a guide that recommends products, answers questions and refines results through dialogue, asking clarifying questions the way a great shop assistant would. Reasoned recommendations reduce indecision and turn browsing into finding.</p>
         <ul class="check">
           <li>Dialogue-driven discovery for shoppers who don't know how to ask</li>
           <li>Clarifying questions that narrow thousands of products to the right few</li>
@@ -119,15 +116,15 @@
       <div class="reveal">
         <span class="kicker">03 — My role</span>
         <h3>Designing a product in constant evolution</h3>
-        <p>As Senior Product Designer I own the end-to-end search experience: results, filtering and zero-results flows, the conversational assistant, and a <strong>scalable design system</strong> that lets one product live seamlessly inside hundreds of different stores. I prototype intent-driven commerce hand in hand with developers — shipping, measuring and improving in short cycles, so the product gets more powerful with every release.</p>
+        <p>As Senior Product Designer I own the end-to-end search experience: results, filtering and zero-results flows, the conversational assistant, and a <strong>scalable design system</strong> that lets one product live seamlessly inside hundreds of different stores. I prototype intent-driven commerce hand in hand with developers, shipping, measuring and improving in short cycles, so the product gets more powerful with every release.</p>
         <ul class="check">
           <li>Search results, filtering and zero-results experience design</li>
-          <li>Conversational assistant UX — flows, tone and interaction patterns</li>
+          <li>Conversational assistant, UX flows, tone and interaction patterns</li>
           <li>A white-label design system that adapts to any brand's identity</li>
         </ul>
       </div>
       <figure class="pp-figure split-img reveal">
-        <img src="asset/kimera/ofertaspadelmain.png" alt="Kimera-powered search results page at Purplant with faceted filters and product grid" loading="lazy" onerror="this.style.display='none'">
+        <img src="asset/kimera/ofertaspadelmain.png" alt="Kimera main product page" loading="lazy" onerror="this.style.display='none'">
         <figcaption>Results &amp; filtering experience, themed for each store</figcaption>
       </figure>
     </div>
@@ -143,7 +140,7 @@
         <p class="sec-label">Always improving</p>
         <h2 class="sec-title">Built to <em>evolve</em></h2>
       </div>
-      <p style="max-width:36ch;color:var(--ink-soft);font-weight:300;font-size:.95rem">Kimera is never finished — the product learns, the team iterates, and the experience gets sharper every single week.</p>
+      <p style="max-width:36ch;color:var(--ink-soft);font-weight:300;font-size:.95rem">Kimera is never finished. The product learns, the team iterates, and the experience gets sharper every single week.</p>
     </div>
     <div class="steps" data-stagger>
       <div class="step reveal">
@@ -173,7 +170,7 @@
       <div class="step reveal">
         <span class="step-num">5</span>
         <h4>Evolve</h4>
-        <p>Each cycle makes the product better and more powerful — by design.</p>
+        <p>Each cycle makes the product better and more powerful.</p>
         <div class="mini"><span>Iteration</span><span>New capabilities</span><span>Smarter AI</span></div>
       </div>
     </div>
@@ -189,22 +186,21 @@
         <p class="sec-label">In the wild</p>
         <h2 class="sec-title">One product, <em>every store</em></h2>
       </div>
-      <p style="max-width:36ch;color:var(--ink-soft);font-weight:300;font-size:.95rem">Kimera integrates with a single line of code and already powers search for brands across beauty, home, food and sport.</p>
     </div>
 
     <div class="split first">
       <div class="reveal">
         <span class="kicker">Seamless integration</span>
         <h3>Invisible technology, native feeling</h3>
-        <p>One of the most interesting design challenges: Kimera must feel <strong>native to every store it lives in</strong>. The same engine dresses itself in each brand's typography, color and tone — from a plant shop to a perfumery — while keeping the interaction patterns shoppers already trust. It sits alongside the store's traditional search and elevates it, with no replatforming required.</p>
+        <p>One of the most interesting design challenges: Kimera must feel <strong>native to every store it lives in</strong>. The same engine dresses itself in each brand's typography, color and tone, while keeping the interaction patterns shoppers already trust. It sits alongside the store's traditional search and elevates it, with no replatforming required.</p>
         <ul class="check">
           <li>Single-line integration on Shopify, PrestaShop, WooCommerce &amp; Magento</li>
           <li>White-label theming driven by the design system</li>
-          <li>Live today at stores like Perfumería Júlia, Purplant, Kibuc and Suavinex</li>
+          <li>Live today at +34 ecommerce.</li>
         </ul>
       </div>
       <figure class="pp-figure split-img reveal">
-        <img src="asset/kimera/julia-home.png" alt="Perfumería Júlia storefront with the Kimera-powered search bar integrated in the header" loading="lazy" onerror="this.style.display='none'">
+        <img src="asset/kimera/perfumeriajulia.png" alt="Perfumería Júlia storefront with the Kimera-powered search bar integrated in the header" loading="lazy" onerror="this.style.display='none'">
         <figcaption>Kimera living natively inside Perfumería Júlia's storefront</figcaption>
       </figure>
     </div>

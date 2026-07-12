@@ -7,6 +7,7 @@
 <meta name="description" content="SportAI case study — making biomechanics simple and accessible with AI. UX/UI by Laura Llavador.">
 <meta name="theme-color" content="#F7F2E7">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light")})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -38,8 +39,10 @@
 
 <header class="nav" id="nav">
   <a class="logo" href="index.html">laurallavador</a>
+  <a class="nav-back" href="index.html#work"><span class="arr">←</span> Back to projects</a>
   
   <a class="nav-cta magnetic" href="#contact">Let's connect <span class="arr">→</span></a>
+  <button class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode"><span class="knob"><svg class="tt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5 5l1.6 1.6M17.4 17.4L19 19M19 5l-1.6 1.6M6.6 17.4L5 19"/></svg><svg class="tt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 14.2A8.5 8.5 0 1 1 9.8 3.4a7 7 0 1 0 10.8 10.8Z"/></svg></span></button>
   <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
 </header>
 
@@ -48,6 +51,7 @@
   <a href="index.html#work"><i>02</i> Work</a>
   <a href="index.html#journey"><i>03</i> Journey</a>
   <a href="#contact"><i>04</i> Contact</a>
+  <div class="mmenu-theme"><span>Theme</span><button class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode"><span class="knob"><svg class="tt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5 5l1.6 1.6M17.4 17.4L19 19M19 5l-1.6 1.6M6.6 17.4L5 19"/></svg><svg class="tt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 14.2A8.5 8.5 0 1 1 9.8 3.4a7 7 0 1 0 10.8 10.8Z"/></svg></span></button></div>
 </nav>
 
 <main id="top">

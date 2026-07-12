@@ -30,6 +30,27 @@
   }
   tick(); setInterval(tick, 30000);
 
+  /* ---- theme: light por defecto, salvo que el usuario elija dark explícitamente ---- */
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
+  var themeToggles = document.querySelectorAll('.theme-toggle');
+  var THEME_BG = { light:'#F7F2E7', dark:'#0B110D' };
+  function applyTheme(t){
+    document.documentElement.setAttribute('data-theme', t);
+    if(themeMeta) themeMeta.content = THEME_BG[t];
+    themeToggles.forEach(function(b){ b.setAttribute('aria-checked', t === 'dark' ? 'true' : 'false'); });
+  }
+  applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+  themeToggles.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      try{
+        if(next === 'light') localStorage.removeItem('theme');
+        else localStorage.setItem('theme', next);
+      }catch(e){}
+    });
+  });
+
   /* ---- nav state ---- */
   var nav = document.getElementById('nav');
   window.addEventListener('scroll', onScroll, {passive:true});
