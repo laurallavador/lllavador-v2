@@ -1,236 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>No Hay Vida Sin Comida — Food Delivery UX | Laura Llavador</title>
-<meta name="description" content="No Hay Vida Sin Comida — user-centered food delivery app. UX/UI case study by Laura Llavador.">
-<meta name="theme-color" content="#F7F2E7">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light")})();</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Laura Llavador's mobile food delivery concept, from research and navigation to the ordering flow.">
+  <title>No Hay Vida Sin Comida | Laura Llavador</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="site-theme.js"></script>
+  <link rel="preload" href="asset/fonts/manrope.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="portfolio-fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="portfolio-motion.css">
+  <script src="portfolio-motion.js" defer></script>
+  <link rel="stylesheet" href="portfolio-blocks.css">
+  <link rel="stylesheet" href="site-navigation.css">
+  <script src="site-navigation.js" defer></script>
+  <link rel="stylesheet" href="portfolio-style.css">
 </head>
-<body>
-<div class="progress"><i></i></div>
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-
-
-<header class="nav nav-simple" id="nav">
-  <a class="nav-back" href="index.html#work"><span class="arr">←</span> <span class="nav-back-label">Back to projects</span></a>
-  <a class="nav-cta magnetic" href="#contact">Let's connect <span class="arr">→</span></a>
-  <button class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode"><span class="knob"><svg class="tt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5 5l1.6 1.6M17.4 17.4L19 19M19 5l-1.6 1.6M6.6 17.4L5 19"/></svg><svg class="tt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 14.2A8.5 8.5 0 1 1 9.8 3.4a7 7 0 1 0 10.8 10.8Z"/></svg></span></button>
-</header>
-
-<nav class="mmenu" id="mmenu">
-  <a href="index.html#about"><i>01</i> About</a>
-  <a href="index.html#work"><i>02</i> Work</a>
-  <a href="index.html#journey"><i>03</i> Journey</a>
-  <a href="#contact"><i>04</i> Contact</a>
-  <div class="mmenu-theme"><span>Theme</span><button class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode"><span class="knob"><svg class="tt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5 5l1.6 1.6M17.4 17.4L19 19M19 5l-1.6 1.6M6.6 17.4L5 19"/></svg><svg class="tt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 14.2A8.5 8.5 0 1 1 9.8 3.4a7 7 0 1 0 10.8 10.8Z"/></svg></span></button></div>
-</nav>
-
-
-
-<main id="top">
-
-<!-- ================= PROJECT HERO ================= -->
-<section class="pp-hero" id="hero">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="frond" style="right:-40px;top:140px;width:170px;transform:scaleX(-1) rotate(16deg);opacity:.5">
-    <svg viewBox="0 0 220 320"><use href="#frond-art"/></svg>
-  </div>
-  <span class="ff" style="left:12%;top:36%;animation-duration:12s,3.2s;animation-delay:-4s,-1s"></span>
-  <span class="ff" style="left:70%;top:22%;animation-duration:10s,2.7s;animation-delay:-2s,-.6s"></span>
-
-  <div class="container">
-    <h1 class="pp-title">User-centered <em>food delivery</em> experience</h1>
-    <div class="pp-tags">
-      <span class="tag">Mobile App</span><span class="tag">Food Delivery</span><span class="tag">UCD</span><span class="tag tag-hot">UX/UI Case study</span>
-    </div>
-    <p class="pp-intro">
-      A user-centered design project for a food delivery app, built around the idea that
-      <strong>it's a pleasure having good food whenever you prefer</strong>. The goal: an intuitive,
-      engaging and seamless experience that meets users' real needs and habits when ordering food online.
-    </p>
-    <dl class="pp-meta" data-stagger>
-      <div class="pm reveal"><dt>Role</dt><dd>UX/UI Designer</dd></div>
-      <div class="pm reveal"><dt>Approach</dt><dd>User-Centered Design</dd></div>
-      <div class="pm reveal"><dt>Platform</dt><dd>Mobile app</dd></div>
-      <div class="pm reveal"><dt>Tools</dt><dd>Figma</dd></div>
-    </dl>
-    <div class="hero-ctas reveal" style="margin-top:34px">
-      <a class="btn btn-primary magnetic" href="https://www.figma.com/file/KXexzQclgHFABuZZNzE1kl?type=design&node-id=8%3A39&mode=design" target="_blank" rel="noopener">Go to the prototype <span class="arr">↗</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= MARQUEE ================= -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <div class="marquee-group">
-      <span>Design system</span><i>✺</i><span>User Personas</span><i>✺</i>
-      <span>Card Sorting</span><i>✺</i><span>User Journeys</span><i>✺</i>
-      <span>Mobile UX</span><i>✺</i><span>Food Delivery</span><i>✺</i>
-    </div>
-    <div class="marquee-group">
-      <span>Design system</span><i>✺</i><span>User Personas</span><i>✺</i>
-      <span>Card Sorting</span><i>✺</i><span>User Journeys</span><i>✺</i>
-      <span>Mobile UX</span><i>✺</i><span>Food Delivery</span><i>✺</i>
-    </div>
-  </div>
-</div>
-
-<!-- ================= GOAL ================= -->
-<section>
-  <span class="sec-num">01</span>
-  <div class="container">
-    <p class="sec-label reveal">01 — User-centered design</p>
-    <p class="statement reveal">
-      What do we want to solve? An app that adapts in a novel way to each user's
-      <em>individual preferences</em> and needs, offering a unique and innovative
-      <span class="hl">gastronomic experience</span> like never before.
-    </p>
-  </div>
-</section>
-
-<!-- ================= METHODOLOGY ================= -->
-<section style="background:var(--bg-2);border-block:1px solid var(--line);padding-top:90px">
-  <span class="sec-num">02</span>
-  <div class="container">
-    <div class="sec-head reveal">
-      <div>
-        <p class="sec-label">02 — Methodology</p>
-        <h2 class="sec-title">Four phases, <em>one focus</em></h2>
+<body class="case-page case-comida">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="index.html" aria-label="Laura Llavador home"><svg class="brand-symbol" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 3h4v22h22v4H3V3Zm11 0h4v11h11v4H14V3Z"/></svg><span class="brand-name">Laura Llavador</span></a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode" title="Switch to dark mode" hidden>
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.8 13.2A8.8 8.8 0 0 1 10.8 3.2a9 9 0 1 0 10 10Z"/></svg>
+        </button>
+        <a class="header-cta" href="mailto:lauxllavador@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        <button type="button" class="menu-toggle" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false" aria-haspopup="dialog" hidden>
+          <span class="menu-toggle-lines" aria-hidden="true"></span>
+        </button>
       </div>
     </div>
-    <div class="steps steps-4" data-stagger>
-      <div class="step reveal">
-        <span class="step-num">1</span>
-        <h4>Research</h4>
-        <p>Understanding the food delivery landscape and real user habits.</p>
-        <div class="mini"><span>Desk research</span><span>Benchmarking</span><span>Surveys</span></div>
-      </div>
-      <div class="step reveal">
-        <span class="step-num">2</span>
-        <h4>Definition</h4>
-        <p>Turning findings into actionable design foundations.</p>
-        <div class="mini"><span>Personas</span><span>Scenarios</span><span>User journeys</span><span>Lean UX canvas</span></div>
-      </div>
-      <div class="step reveal">
-        <span class="step-num">3</span>
-        <h4>Design</h4>
-        <p>From structure to high-fidelity, iterating at every step.</p>
-        <div class="mini"><span>Card sorting</span><span>Treemap</span><span>Sketching</span><span>Wireframe</span><span>Prototype</span></div>
-      </div>
-      <div class="step reveal">
-        <span class="step-num">4</span>
-        <h4>Evaluation</h4>
-        <p>Validating the experience with real users and data.</p>
-        <div class="mini"><span>Heuristic evaluation</span><span>User testing</span><span>User analytics</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- ================= RESEARCH ARTIFACTS ================= -->
-<section>
-  <span class="sec-num">03</span>
-  <div class="container">
-    <div class="sec-head reveal">
-      <div>
-        <p class="sec-label">03 — Research</p>
-        <h2 class="sec-title">User <em>personas</em></h2>
+  <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
+    <div class="mobile-menu-header">
+      <p class="eyebrow" id="mobile-menu-title">Explore</p>
+      <button type="button" class="mobile-menu-close" aria-label="Close navigation menu" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M6 18 18 6"/></svg></button>
+    </div>
+    <nav class="mobile-menu-links" aria-label="Mobile main">
+      <a href="index.html#work"><span class="mobile-menu-number">01</span><span class="mobile-menu-label">Work</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#arrow-right"/></svg></a>
+      <a href="index.html#about"><span class="mobile-menu-number">02</span><span class="mobile-menu-label">About</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#arrow-right"/></svg></a>
+      <a href="index.html#contact"><span class="mobile-menu-number">03</span><span class="mobile-menu-label">Contact</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#arrow-right"/></svg></a>
+    </nav>
+    <div class="mobile-menu-footer"><p>Senior Product Designer</p><a class="mobile-menu-email" href="mailto:lauxllavador@gmail.com">lauxllavador@gmail.com <span aria-hidden="true">↗</span></a></div>
+  </dialog>
+
+  <main id="main">
+    <section class="shell case-hero" aria-labelledby="case-title">
+      <a class="case-kicker" href="index.html#work"><span aria-hidden="true">←</span> Selected work</a>
+      <p class="eyebrow">Additional project / No Hay Vida Sin Comida</p>
+      <h1 class="case-title" id="case-title">Food delivery built around how people choose.</h1>
+      <p class="case-lede">I designed a mobile app concept that adapts to people's food preferences and ordering habits, from finding a restaurant to reviewing an order.</p>
+      <dl class="case-meta">
+        <div><dt><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#briefcase"/></svg>Role</dt><dd>UX/UI Designer</dd></div>
+        <div><dt><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#package"/></svg>Platform</dt><dd>Mobile app concept</dd></div>
+        <div><dt><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#layers"/></svg>Scope</dt><dd>Research · Information architecture · Prototyping</dd></div>
+      </dl>
+      <p><a class="text-link" href="https://www.figma.com/file/KXexzQclgHFABuZZNzE1kl?type=design&amp;node-id=8%3A39&amp;mode=design" target="_blank" rel="noopener">Open the Figma project <span aria-hidden="true">↗</span></a></p>
+    </section>
+
+    <figure class="shell case-cover">
+      <img src="asset/comida/comidamain.png" width="3594" height="1978" alt="No Hay Vida Sin Comida launch screen and mobile restaurant discovery screen" fetchpriority="high">
+      <figcaption>The app's visual identity and discovery experience.</figcaption>
+    </figure>
+
+    <div class="shell case-body">
+      <section class="case-section case-section--band" aria-labelledby="comida-methodology">
+        <div class="case-section-head">
+          <span class="section-mark"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#compass"/></svg></span>
+          <p class="case-section-label">01 / User-centered design</p>
+          <h2 id="comida-methodology">Design for the way people order.</h2>
+        </div>
+        <div class="case-copy">
+          <p>I wanted to make ordering feel easy for people with different preferences, budgets and schedules. I followed a user-centered design process and built the prototype in Figma.</p>
+        </div>
+        <div class="process-grid">
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#search"/></svg></span>
+            <h3>01. Research</h3>
+            <p>Desk research, benchmarking and surveys helped me understand the food delivery landscape and people’s ordering habits.</p>
+          </article>
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#target"/></svg></span>
+            <h3>02. Definition</h3>
+            <p>I translated the findings into personas, scenarios, journey maps and a Lean UX canvas.</p>
+          </article>
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#pen"/></svg></span>
+            <h3>03. Design</h3>
+            <p>I used card sorting and a treemap to organize the app, then moved from sketches and wireframes to a high-fidelity prototype.</p>
+          </article>
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#check"/></svg></span>
+            <h3>04. Evaluation</h3>
+            <p>I evaluated the prototype through heuristic review and user testing. The evaluation plan also included user analytics.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="comida-personas">
+        <div class="case-section-head">
+          <span class="section-mark"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#users"/></svg></span>
+          <p class="case-section-label">02 / Research</p>
+          <h2 id="comida-personas">Three ways to order dinner.</h2>
+        </div>
+        <div class="case-copy">
+          <p>I used three personas to make different ordering needs concrete. Enrique orders with housemates, Pedro looks for food that suits his family, and Sara often orders for herself after work.</p>
+        </div>
+        <div class="case-grid case-three-grid">
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/user1.png" target="_blank" rel="noopener" aria-label="Open Enrique Pérez’s persona at full size">
+              <img src="asset/comida/user1.png" width="3420" height="2412" alt="Research persona for Enrique Pérez, with his context, goals, needs and frustrations" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Enrique Pérez.</strong> Ordering with housemates means agreeing on food, keeping the cost down and splitting the bill.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/user2.png" target="_blank" rel="noopener" aria-label="Open Pedro Ramírez’s persona at full size">
+              <img src="asset/comida/user2.png" width="3426" height="2418" alt="Research persona for Pedro Ramírez, with his context, goals, needs and frustrations" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Pedro Ramírez.</strong> He wants a quick way to find a new restaurant and order food that suits the people he is eating with.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/user3.png" target="_blank" rel="noopener" aria-label="Open Sara López’s persona at full size">
+              <img src="asset/comida/user3.png" width="3420" height="2406" alt="Research persona for Sara López, with her context, goals, needs and frustrations" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Sara López.</strong> She wants an easy way to find food that fits her tastes and budget when ordering for one.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section case-section--band" aria-labelledby="comida-architecture">
+        <div class="case-section-head">
+          <span class="section-mark"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#layers"/></svg></span>
+          <p class="case-section-label">03 / Information architecture</p>
+          <h2 id="comida-architecture">Map the decisions behind an order.</h2>
+        </div>
+        <div class="case-copy">
+          <p>I mapped the steps, pain points and emotions in each ordering scenario to see where the app could help. I also used card sorting to organize features around discovery, personalization, ordering and delivery.</p>
+        </div>
+        <div class="case-callout">
+          <p class="eyebrow">Original card-sorting labels</p>
+          <div class="case-copy" lang="es">
+            <p>Carrito de la compra · Programar pedido · Detalles del pedido · Menú personalizado · Recomendar · Carta personalizada · Restaurantes · Categorías de comida · Descuentos y promociones · Chat · Niveles de usuario · Métodos de pago · Ubicación</p>
+          </div>
+        </div>
+        <div class="case-grid case-three-grid">
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/journey1.png" target="_blank" rel="noopener" aria-label="Open Sara López’s journey map at full size">
+              <img src="asset/comida/journey1.png" width="1259" height="810" alt="Sara López’s ordering journey map with actions, pain points, emotions and opportunities" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Sara’s journey.</strong> From checking promotions to receiving an order, with opportunities to clarify discounts and manage a late delivery.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/journey2.png" target="_blank" rel="noopener" aria-label="Open Pedro Ramírez’s journey map at full size">
+              <img src="asset/comida/journey2.png" width="1263" height="810" alt="Pedro Ramírez’s ordering journey map covering recommendations, scheduling, payment and delivery" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Pedro’s journey.</strong> The map identifies opportunities around recommendations, the basket, delivery timing and payment.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/journey3.png" target="_blank" rel="noopener" aria-label="Open the alternate layout of Pedro Ramírez’s journey map at full size">
+              <img src="asset/comida/journey3.png" width="1265" height="810" alt="Alternate layout of Pedro’s scenario with pain points aligned to the steps they affect" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>Pedro’s scenario, alternate map.</strong> The layout connects each pain point and opportunity to the relevant step.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="comida-flow">
+        <div class="case-section-head">
+          <span class="section-mark"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#package"/></svg></span>
+          <p class="case-section-label">04 / Final screens</p>
+          <h2 id="comida-flow">From first launch to checkout.</h2>
+        </div>
+        <div class="case-copy">
+          <p>The prototype lets users ask for a recommendation or browse on their own. They can explore food categories, compare restaurants, choose dishes and review the cost of their order before paying.</p>
+          <p><a class="text-link" href="https://www.figma.com/file/KXexzQclgHFABuZZNzE1kl?type=design&amp;node-id=8%3A39&amp;mode=design" target="_blank" rel="noopener">See the prototype in Figma <span aria-hidden="true">↗</span></a></p>
+        </div>
+        <div class="case-grid case-phone-grid case-gallery-4">
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/screen1.png" target="_blank" rel="noopener" aria-label="Open the launch screen at full size">
+              <img src="asset/comida/screen1.png" width="757" height="1536" alt="Dark launch screen with the No Hay Vida Sin Comida wordmark" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Launch screen</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/screen2.png" target="_blank" rel="noopener" aria-label="Open the welcome screen at full size">
+              <img src="asset/comida/screen2.png" width="757" height="1536" alt="Welcome screen that introduces personalized food suggestions and offers sign-in" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Welcome and sign-in</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/screen4.png" target="_blank" rel="noopener" aria-label="Open the registration screen at full size">
+              <img src="asset/comida/screen4.png" width="757" height="1536" alt="Registration screen with account fields and social sign-in options" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Registration</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/screen3.png" target="_blank" rel="noopener" aria-label="Open the discovery choice screen at full size">
+              <img src="asset/comida/screen3.png" width="757" height="1536" alt="Onboarding choice between asking for a food recommendation and choosing independently" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Recommendation or self-guided discovery</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/screen6.png" target="_blank" rel="noopener" aria-label="Open the discovery home screen at full size">
+              <img src="asset/comida/screen6.png" width="757" height="1536" alt="Discovery home with search, featured food and food categories" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Discovery home</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/screen7.png" target="_blank" rel="noopener" aria-label="Open the cuisine results at full size">
+              <img src="asset/comida/screen7.png" width="757" height="1538" alt="American cuisine results with restaurant names, delivery times and a minimum order" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Browse restaurants by cuisine</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/screen9.png" target="_blank" rel="noopener" aria-label="Open the alternate restaurant results at full size">
+              <img src="asset/comida/screen9.png" width="757" height="1538" alt="Alternate restaurant list showing Delicias de América, Mamma Mia, Currylovers and Tapas y Olé" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Alternate restaurant results</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/screen8.png" target="_blank" rel="noopener" aria-label="Open the restaurant menu at full size">
+              <img src="asset/comida/screen8.png" width="757" height="1539" alt="Delicias de América restaurant menu with dishes, prices and an add-to-basket control" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Restaurant menu</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/comida/screen10.png" target="_blank" rel="noopener" aria-label="Open the basket screen at full size">
+              <img src="asset/comida/screen10.png" width="757" height="1538" alt="Basket review with item quantities, delivery fee, discount and order total" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Basket review before payment</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>Laura Llavador · Senior Product Designer</span>
+      <div class="footer-links">
+        <a href="mailto:lauxllavador@gmail.com">Email <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/laurallavadorgarcia/">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="asset/LauraLlavadorCV.pdf">CV <span aria-hidden="true">↗</span></a>
       </div>
-    </div>
-    <div class="grid-3" data-stagger>
-      <figure class="pp-figure reveal"><img src="asset/comida/user1.png" alt="User persona 1" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="pp-figure reveal"><img src="hasset/comida/user2.png" alt="User persona 2" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="pp-figure reveal"><img src="asset/comida/user3.png" alt="User persona 3" loading="lazy" onerror="this.style.display='none'"></figure>
-    </div>
-
-    <div class="sec-head reveal" style="margin-top:90px">
-      <div>
-        <p class="sec-label">04 — Architecture</p>
-        <h2 class="sec-title">Card sorting &amp; <em>user journeys</em></h2>
-      </div>
-    </div>
-    <div class="tools reveal" data-stagger style="margin-bottom:34px">
-      <span class="tool reveal">Carrito de la compra</span><span class="tool reveal">Programar pedido</span>
-      <span class="tool reveal">Detalles del pedido</span><span class="tool reveal">Menú personalizado</span>
-      <span class="tool reveal">Recomendar</span><span class="tool reveal">Carta personalizada</span>
-      <span class="tool reveal">Restaurantes</span><span class="tool reveal">Categorías de comida</span>
-      <span class="tool reveal">Descuentos y promociones</span><span class="tool reveal">Chat</span>
-      <span class="tool reveal">Niveles de usuario</span><span class="tool reveal">Métodos de pago</span>
-      <span class="tool reveal">Ubicación</span>
-    </div>
-    <div class="grid-3" data-stagger>
-      <figure class="pp-figure reveal"><img src="asset/comida/journey1.png" alt="User journey 1" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="pp-figure reveal"><img src="asset/comida/journey2.png" alt="User journey 2" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="pp-figure reveal"><img src="asset/comida/journey3.png" alt="User journey 3" loading="lazy" onerror="this.style.display='none'"></figure>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FINAL SCREENS ================= -->
-<section style="background:var(--bg-2);border-block:1px solid var(--line)">
-  <span class="sec-num">04</span>
-  <div class="container">
-    <div class="sec-head reveal">
-      <div>
-        <p class="sec-label">05 — The solution</p>
-        <h2 class="sec-title">Final <em>screens</em></h2>
-      </div>
-      <a class="sec-link" href="https://www.figma.com/file/KXexzQclgHFABuZZNzE1kl?type=design&node-id=8%3A39&mode=design" target="_blank" rel="noopener">Open prototype ↗</a>
-    </div>
-    <div class="screens reveal">
-      <figure><img src="asset/comida/screen1.png" alt="App screen — inicio" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/comida/screen2.png" alt="App screen — intro" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/comida/screen3.png" alt="App screen — regístrate" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/comida/screen4.png" alt="App screen — descubre" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/comida/screen5.png" alt="App screen — home" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/comida/screen6.png" alt="App screen — restaurantes" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/comida/screen7.png" alt="App screen — delicias de América" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/comida/screen8.png" alt="App screen — pedido" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/comida/screen9.png" alt="App screen — pedido confirmado" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/comida/screen10.png" alt="App screen — pedido confirmado" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-    </div>
-    <p class="drag-hint">( drag / scroll → )</p>
-  </div>
-</section>
-
-
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="compact">
-  <div class="sunset"></div>
-  <span class="ff" style="left:22%;top:34%;animation-duration:12s,3.2s;animation-delay:-4s,-1s"></span>
-  <span class="ff" style="left:74%;top:28%;animation-duration:10s,2.6s;animation-delay:-2s,-.5s"></span>
-  <span class="ff" style="left:56%;top:60%;animation-duration:14s,3.8s;animation-delay:-7s,-1.9s"></span>
-  <div class="container contact-inner">
-    <p class="sec-label contact-label reveal">Contact</p>
-    <div class="contact-ctas reveal">
-      <a class="btn btn-sand magnetic" href="mailto:lauxllavador@gmail.com">lauxllavador@gmail.com <span class="arr">↗</span></a>
-      <a class="btn btn-line magnetic" href="index.html">Back to home <span class="arr">→</span></a>
-    </div>
-    <div class="contact-meta reveal">
-      <a href="https://www.linkedin.com/in/laurallavadorgarcia/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://www.behance.net/laurallavador" target="_blank" rel="noopener">Behance ↗</a>
-      <span>Valencia, Spain</span>
-    </div>
-  </div>
-   <footer>
-    <div class="container foot-inner">
-      <span>© 2026 Laura Llavador — All rights reserved</span>
     </div>
   </footer>
-</section>
-
-</main>
-<script src="main.js"></script>
 </body>
 </html>

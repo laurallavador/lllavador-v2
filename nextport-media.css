@@ -1,0 +1,26 @@
+.case-nextport .case-3d-link {
+  margin-top: 18px;
+}
+
+.case-nextport .case-video {
+  width: 100%;
+  max-width: min(900px, 92vh);
+  justify-self: center;
+}
+
+.case-nextport .case-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 72vh;
+  object-fit: contain;
+  background: var(--viewer-stage);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.case-nextport .case-video figcaption a {
+  color: var(--action);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

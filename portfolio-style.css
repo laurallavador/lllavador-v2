@@ -1,0 +1,313 @@
+/* Shared visual language: airy display type, warm neutrals and quiet borders. */
+body { font-family: var(--sans); line-height: 1.65; }
+body.home-reference { background: var(--paper); }
+
+.eyebrow, .case-section-label, .case-meta dt,
+.project-meta, .case-link-label, .case-kicker,
+.main-nav, .header-cta, .button, .text-link,
+.workflow-tools, .workflow a, .hero-scroll,
+.kimera-case-nav a, .showcase-label, .showcase-options button,
+.mobile-menu-header p, .mobile-menu-number, .mobile-menu-footer p,
+.kimera-shot a::after, .kimera-store-more > summary {
+  font-family: var(--mono);
+  font-weight: 400;
+}
+.eyebrow, .case-section-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.075em;
+  line-height: 1.55;
+}
+.case-kicker { font-size: 0.72rem; }
+.project-meta { font-size: 0.67rem; letter-spacing: 0; }
+.case-meta dt { font-size: 0.68rem; }
+
+.site-header, .home-reference .site-header {
+  top: 0;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid var(--header-rule);
+  border-radius: 0;
+  background: var(--header-bg);
+  box-shadow: none;
+}
+.site-header .header-inner, .home-reference .header-inner {
+  width: min(1240px, calc(100% - 96px));
+  min-height: 76px;
+}
+.home-reference .site-header::after { inset: auto 0 -1px; border-radius: 0; }
+.motion-ready .site-header::after { height: 1px; }
+.site-header .brand-name {
+  font-family: var(--sans);
+  font-weight: 650;
+  letter-spacing: -0.035em;
+}
+.site-header .brand-symbol { color: var(--ink); }
+.site-header .main-nav { font-size: 0.72rem; letter-spacing: 0.015em; }
+.site-header .main-nav a { padding-block: 10px; }
+.site-header .header-cta, .home-reference .header-cta {
+  padding: 11px 19px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+}
+.theme-toggle, .menu-toggle, .mobile-menu-close {
+  background: var(--paper);
+  box-shadow: none;
+}
+
+.home-reference .hero-reference {
+  padding-block: clamp(66px, 7vw, 100px) 44px;
+}
+.home-reference .hero-reference h1 {
+  font-family: var(--display);
+  font-size: clamp(4.8rem, 9.1vw, 7.7rem);
+  font-weight: 200;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+}
+.home-reference .hero-reference h1 em {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.07em;
+}
+.hero-reference .hero-eyebrow { color: var(--ink); font-size: 0.74rem; }
+.hero-reference .hero-eyebrow::before { width: 24px; }
+.hero-reference .hero-flower { color: var(--accent); }
+.home-reference .hero-reference .hero-lede { color: var(--muted); line-height: 1.75; }
+.home-reference .hero-reference .hero-portrait { width: min(100%, 330px); }
+.hero-reference .hero-portrait-frame::before { display: none; }
+.home-reference .hero-reference .hero-portrait-photo { box-shadow: none; }
+.hero-reference .portrait-availability, .hero-reference .portrait-note {
+  border-color: var(--rule);
+  box-shadow: none;
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.hero-reference .portrait-availability { padding: 9px 12px; }
+.hero-reference .portrait-note { padding: 11px 13px; }
+.hero-reference .hero-portrait figcaption {
+  margin-top: 16px;
+  font-family: var(--mono);
+  font-size: 0.61rem;
+}
+.hero-reference .hero-portrait figcaption strong,
+.hero-reference .hero-portrait figcaption > span {
+  padding: 6px 9px;
+  background: var(--paper);
+  font-weight: 400;
+}
+.hero-scroll { font-size: 0.65rem; }
+.hero-scroll-icon { border-color: var(--rule); }
+
+.button, .hero-reference .button-primary {
+  min-height: 48px;
+  padding: 12px 23px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+.hero-reference .button-primary {
+  color: var(--button-ink);
+  background: var(--button-bg);
+  border-color: var(--button-bg);
+}
+.hero-reference .button-primary:hover {
+  background: var(--button-hover);
+  border-color: var(--button-hover);
+}
+.text-link { font-size: 0.73rem; letter-spacing: 0; }
+
+.section-intro { margin-bottom: 28px; }
+.section-intro h2, .about-copy h2, .contact h2 {
+  font-family: var(--display);
+  font-size: clamp(2.65rem, 4.7vw, 4.75rem);
+  font-weight: 200;
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+.section-intro > p { font-size: 0.88rem; line-height: 1.7; }
+.section-index { margin-bottom: 10px; }
+.icon-badge, .section-mark {
+  border-radius: 50%;
+  color: var(--ink);
+  background: var(--surface);
+}
+.project-link, .secondary-project, .workflow,
+.capability-card, .insight-card, .process-grid > li,
+.kimera-surface-list li, .kimera-metrics > div,
+.case-meta > div, .case-section--band,
+.kimera-store, .case-callout {
+  border-radius: 16px;
+  box-shadow: none;
+}
+.project-link { background: var(--surface); }
+.project-link:hover { box-shadow: none; }
+.project-content { padding: clamp(22px, 2.8vw, 36px); }
+.project-content h3 {
+  margin-top: 15px;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.1vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+}
+.project-content > p:not(.project-meta) { margin-block: 12px 25px; font-size: 0.95rem; line-height: 1.7; }
+.case-link-label { font-size: 0.7rem; letter-spacing: 0.025em; }
+.project-art { background: var(--soft); }
+.nextport-card-visual { background: var(--soft); }
+.project-art figcaption { font-size: 0.7rem; }
+.secondary-project { padding: 12px; }
+.secondary-copy strong {
+  font-family: var(--serif);
+  font-size: clamp(1rem, 1.7vw, 1.3rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+.secondary-copy > span { font-size: 0.76rem; line-height: 1.5; }
+.secondary-preview { border-radius: 10px; }
+
+.about-section { padding-block: clamp(76px, 8vw, 112px); }
+.workflow, .contact { background: var(--panel-base); }
+.workflow h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 2.7vw, 2.65rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+.workflow > p:not(.eyebrow) { font-size: 0.92rem; line-height: 1.75; }
+.workflow-tools span { border-radius: 12px; font-size: 0.65rem; }
+.workflow a { font-size: 0.7rem; line-height: 1.6; }
+.capability-card h3, .insight-card h3, .process-grid > li h3,
+.kimera-surface-list li > strong {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+.capability-card p, .insight-card p, .process-grid > li p,
+.kimera-surface-list li > p { font-size: 0.9rem; line-height: 1.75; }
+.contact-inner { min-height: 290px; padding-block: 58px; }
+.contact .section-mark { color: var(--on-panel); }
+.contact .button-primary {
+  background: var(--on-panel);
+  color: var(--panel-base);
+  border-color: var(--on-panel);
+}
+.contact .button-primary:hover { background: var(--panel-signal); border-color: var(--panel-signal); }
+.footer-inner { font-size: 0.73rem; }
+.footer-links { font-family: var(--mono); font-size: 0.66rem; }
+
+.case-title {
+  font-family: var(--display);
+  font-size: clamp(2.8rem, 5.8vw, 5.4rem);
+  font-weight: 200;
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+.case-lede { font-size: clamp(1rem, 1.4vw, 1.15rem); line-height: 1.75; }
+.case-meta { margin-top: 32px; }
+.case-meta dd { font-weight: 500; }
+.case-section { padding-block: clamp(42px, 5.5vw, 76px); }
+.case-section h2 {
+  font-family: var(--display);
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+  font-weight: 200;
+  line-height: 1.14;
+  letter-spacing: -0.045em;
+}
+.case-copy { font-size: 0.96rem; line-height: 1.8; }
+.case-section--band { background: var(--surface); padding: clamp(25px, 3.8vw, 48px); }
+.case-section--band .capability-card,
+.case-section--band .insight-card,
+.case-section--band .process-grid > li,
+.case-section--band .case-callout { background: var(--paper); }
+.case-figure img, .case-image-link { border-radius: 12px; }
+.case-callout { border: 1px solid var(--rule); background: var(--surface); }
+.case-callout p + p {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2.3vw, 1.9rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+.showcase-label, .showcase-options button { font-size: 0.68rem; font-weight: 400; }
+.showcase-options button { border-radius: 999px; padding-inline: 14px; }
+.showcase-stage, .case-showcase--maritime .showcase-stage { background: var(--soft); }
+
+.kimera-case-nav a { border-radius: 999px; font-size: 0.68rem; padding: 9px 15px; }
+.kimera-evidence .case-section-label, .kimera-store-header .eyebrow {
+  font: 400 0.68rem/1.55 var(--mono);
+  letter-spacing: 0.04em;
+}
+.kimera-store-header h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+.kimera-shot a { border-radius: 12px; }
+.kimera-shot img { border-radius: 11px 11px 0 0; }
+.kimera-shot a::after { padding: 10px 13px; font-size: 0.65rem; }
+.kimera-store-more > summary { font-size: 0.72rem; }
+.kimera-metrics dd { font-family: var(--display); font-weight: 300; letter-spacing: -0.045em; }
+.shot-viewer { border-radius: 16px; }
+.shot-viewer-header h2 { font-family: var(--sans); font-weight: 500; }
+.shot-viewer button { border-radius: 999px; font-family: var(--mono); font-weight: 400; }
+.shot-viewer .shot-viewer-close { font-size: 0.68rem; }
+
+.mobile-menu { border-radius: 16px; box-shadow: none; }
+.mobile-menu-header p { font-size: 0.65rem; }
+.mobile-menu-label { font-family: var(--display); font-weight: 200; letter-spacing: -0.05em; }
+.mobile-menu-number { color: var(--muted); font-size: 0.65rem; }
+.mobile-menu-email { font-weight: 500; }
+
+@media (max-width: 1080px) {
+  .site-header .header-inner, .home-reference .header-inner { width: calc(100% - 68px); }
+}
+@media (max-width: 760px) {
+  .site-header .header-inner, .home-reference .header-inner { width: calc(100% - 40px); }
+  .nav-ready .site-header .header-inner { min-height: 66px; }
+  .site-header .brand-name { font-size: 0.9rem; }
+  .home-reference .hero-reference { padding-block: 45px 30px; }
+  .home-reference .hero-reference h1 { font-size: clamp(3.7rem, 17vw, 5.4rem); }
+  .home-reference .hero-reference .hero-portrait { width: min(80%, 280px); }
+  .hero-reference .portrait-note { right: -14px; font-size: 0.6rem; }
+  .hero-reference .portrait-availability { left: -14px; font-size: 0.6rem; }
+  .hero-reference .hero-portrait figcaption { gap: 8px; font-size: 0.6rem; }
+  .hero-reference .hero-portrait figcaption strong,
+  .hero-reference .hero-portrait figcaption > span { padding: 6px 8px; }
+  .section-intro h2, .about-copy h2, .contact h2 { font-size: clamp(2.5rem, 9vw, 3.6rem); }
+  .section-intro { gap: 16px; }
+  .about-section { padding-block: 64px; }
+  .case-title { font-size: clamp(2.65rem, 9.5vw, 4.5rem); }
+  .case-section h2 { font-size: clamp(2rem, 7vw, 2.8rem); }
+  .case-section--band { padding: 26px 18px; }
+  .capability-card h3 { font-size: 1.2rem; }
+  .contact-inner { min-height: 250px; padding-block: 42px; }
+  .contact-actions { gap: 16px; }
+}
+@media (max-width: 450px) {
+  .contact-inner { min-height: 0; gap: 27px; }
+  .project-content { padding: 23px; }
+  .secondary-project { gap: 10px; }
+  .secondary-copy strong { font-size: 1.08rem; line-height: 1.25; }
+  .secondary-copy > span { font-size: 0.7rem; }
+  .showcase-options button { padding-inline: 10px; font-size: 0.64rem; }
+}
+@media (max-width: 355px) {
+  .site-header .brand-name { font-size: 0.82rem; }
+  .site-header .brand-symbol { width: 25px; height: 25px; }
+  .nav-ready .site-header .header-inner { gap: 8px; }
+  .hero-reference .portrait-note { padding-inline: 10px; font-size: 0.57rem; }
+  .hero-reference .hero-portrait figcaption { font-size: 0.57rem; }
+  .hero-reference .hero-portrait figcaption strong,
+  .hero-reference .hero-portrait figcaption > span { padding-inline: 6px; }
+}

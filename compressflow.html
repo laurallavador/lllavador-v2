@@ -1,209 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CompressFlow — Image Optimization for Webflow | Laura Llavador</title>
-<meta name="description" content="CompressFlow — next level image optimization for Webflow. Product design case study by Laura Llavador.">
-<meta name="theme-color" content="#F7F2E7">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Laura Llavador's responsive design for CompressFlow, an image optimization workflow for Webflow users.">
+  <title>CompressFlow | Laura Llavador</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="site-theme.js"></script>
+  <link rel="preload" href="asset/fonts/manrope.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="portfolio-fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="portfolio-motion.css">
+  <script src="portfolio-motion.js" defer></script>
+  <link rel="stylesheet" href="portfolio-blocks.css">
+  <link rel="stylesheet" href="site-navigation.css">
+  <script src="site-navigation.js" defer></script>
+  <link rel="stylesheet" href="portfolio-style.css">
 </head>
-<body>
-<div class="progress"><i></i></div>
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-
-
-<header class="nav nav-simple" id="nav">
-  <a class="nav-back" href="index.html#work"><span class="arr">←</span> <span class="nav-back-label">Back to projects</span></a>
-  <a class="nav-cta magnetic" href="#contact">Let's connect <span class="arr">→</span></a>
-  <button class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode"><span class="knob"><svg class="tt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5 5l1.6 1.6M17.4 17.4L19 19M19 5l-1.6 1.6M6.6 17.4L5 19"/></svg><svg class="tt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 14.2A8.5 8.5 0 1 1 9.8 3.4a7 7 0 1 0 10.8 10.8Z"/></svg></span></button>
-</header>
-
-<nav class="mmenu" id="mmenu">
-  <a href="index.html#about"><i>01</i> About</a>
-  <a href="index.html#work"><i>02</i> Work</a>
-  <a href="index.html#journey"><i>03</i> Journey</a>
-  <a href="#contact"><i>04</i> Contact</a>
-</nav>
-
-<main id="top">
-
-<!-- ================= PROJECT HERO ================= -->
-<section class="pp-hero" id="hero">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="frond" style="right:-40px;top:140px;width:170px;transform:scaleX(-1) rotate(16deg);opacity:.5">
-    <svg viewBox="0 0 220 320"><use href="#frond-art"/></svg>
-  </div>
-  <span class="ff" style="left:14%;top:34%;animation-duration:12s,3.2s;animation-delay:-4s,-1s"></span>
-  <span class="ff" style="left:68%;top:24%;animation-duration:10s,2.7s;animation-delay:-2s,-.6s"></span>
-
-  <div class="container">
-    <h1 class="pp-title">Image optimization for a <em>faster Webflow</em></h1>
-    <div class="pp-tags">
-      <span class="tag">Product Design</span><span class="tag">Responsive</span><span class="tag">Discovery</span><span class="tag tag-hot">Feature design</span>
-    </div>
-    <p class="pp-intro">
-      CompressFlow is a powerful tool within the Webflow ecosystem, built to enhance and streamline
-      web design processes. With an intuitive interface and robust functionality, it lets users
-      <strong>convert, compress and resize images efficiently</strong>. 
-    </p>
-    <dl class="pp-meta" data-stagger>
-      <div class="pm reveal"><dt>Role</dt><dd>Product Designer</dd></div>
-      <div class="pm reveal"><dt>Type</dt><dd>Feature design</dd></div>
-      <div class="pm reveal"><dt>Platform</dt><dd>Web app · Responsive</dd></div>
-      <div class="pm reveal"><dt>Tools</dt><dd>Figma · Design System</dd></div>
-    </dl>
-    <div class="hero-ctas reveal" style="margin-top:34px">
-      <a class="btn btn-primary magnetic" href="https://www.figma.com/design/Y1x4acw534fKBAmdLMtuzI/CompresFlow_LauraLlavador_Final?m=auto&t=eceRPB2Yg10zjkMi-6" target="_blank" rel="noopener">Go to the prototype <span class="arr">↗</span></a>
-    </div>
-   
-  </div>
-</section>
-
-<!-- ================= MARQUEE ================= -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <div class="marquee-group">
-      <span>Convert</span><i>✺</i><span>Compress</span><i>✺</i>
-      <span>Resize</span><i>✺</i><span>Web Performance</span><i>✺</i>
-      <span>Webflow Ecosystem</span><i>✺</i><span>Design Thinking</span><i>✺</i>
-    </div>
-    <div class="marquee-group">
-      <span>Convert</span><i>✺</i><span>Compress</span><i>✺</i>
-      <span>Resize</span><i>✺</i><span>Web Performance</span><i>✺</i>
-      <span>Webflow Ecosystem</span><i>✺</i><span>Design Thinking</span><i>✺</i>
-    </div>
-  </div>
-</div>
-
-<!-- ================= PROBLEM & SOLUTION ================= -->
-<section>
-  <span class="sec-num">01</span>
-  <div class="container">
-    <div class="sec-head reveal">
-      <div>
-        <p class="sec-label">01 — Problem &amp; solution</p>
-        <h2 class="sec-title">From friction to <em>flow</em></h2>
+<body class="case-page case-compressflow">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="index.html" aria-label="Laura Llavador home"><svg class="brand-symbol" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 3h4v22h22v4H3V3Zm11 0h4v11h11v4H14V3Z"/></svg><span class="brand-name">Laura Llavador</span></a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Dark mode" title="Switch to dark mode" hidden>
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.8 13.2A8.8 8.8 0 0 1 10.8 3.2a9 9 0 1 0 10 10Z"/></svg>
+        </button>
+        <a class="header-cta" href="mailto:lauxllavador@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        <button type="button" class="menu-toggle" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false" aria-haspopup="dialog" hidden>
+          <span class="menu-toggle-lines" aria-hidden="true"></span>
+        </button>
       </div>
     </div>
-    <div class="steps" style="grid-template-columns:repeat(2,1fr)" data-stagger>
-      <div class="step reveal">
-        <span class="step-num">✕</span>
-        <h4>Problem</h4>
-        <p>Large images and manual optimizations slow down sites and create inconsistent visual results across devices.</p>
-        <div class="mini"><span>Slow load times</span><span>Manual workflow</span><span>Inconsistency</span></div>
-      </div>
-      <div class="step reveal">
-        <span class="step-num">✓</span>
-        <h4>Solution</h4>
-        <p>CompressFlow automates conversion, resizing and quality tuning with a single, predictable workflow, saving time and improving performance.</p>
-        <div class="mini"><span>One workflow</span><span>Automated</span><span>Faster sites</span></div>
-      </div>
-    </div>
+  </header>
 
-    <div class="pp-hero-img reveal" style="margin-top:26px; object-fit:cover;">
-      <img src="asset/webflow/compressflow1.png" alt="CompressFlow app mockup" loading="lazy" onerror="this.style.display='none'">
+  <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
+    <div class="mobile-menu-header">
+      <p class="eyebrow" id="mobile-menu-title">Explore</p>
+      <button type="button" class="mobile-menu-close" aria-label="Close navigation menu" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M6 18 18 6"/></svg></button>
     </div>
-  </div>
-</section>
+    <nav class="mobile-menu-links" aria-label="Mobile main">
+      <a href="index.html#work"><span class="mobile-menu-number">01</span><span class="mobile-menu-label">Work</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#arrow-right"/></svg></a>
+      <a href="index.html#about"><span class="mobile-menu-number">02</span><span class="mobile-menu-label">About</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#arrow-right"/></svg></a>
+      <a href="index.html#contact"><span class="mobile-menu-number">03</span><span class="mobile-menu-label">Contact</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#arrow-right"/></svg></a>
+    </nav>
+    <div class="mobile-menu-footer"><p>Senior Product Designer</p><a class="mobile-menu-email" href="mailto:lauxllavador@gmail.com">lauxllavador@gmail.com <span aria-hidden="true">↗</span></a></div>
+  </dialog>
 
-<!-- ================= PROCESS ================= -->
-<section style="background:var(--bg-2);border-block:1px solid var(--line)">
-  <span class="sec-num">02</span>
-  <div class="container">
-    <div class="sec-head reveal">
-      <div>
-        <p class="sec-label">02 — Process</p>
-        <h2 class="sec-title">User-centered <em>design process</em></h2>
+  <main id="main">
+    <section class="shell case-hero" aria-labelledby="case-title">
+      <a class="case-kicker" href="index.html#work"><span aria-hidden="true">←</span> Selected work</a>
+      <p class="eyebrow">Additional project / CompressFlow</p>
+      <h1 class="case-title" id="case-title">One workflow for Webflow image optimization.</h1>
+      <p class="case-lede">CompressFlow brings image conversion, compression and resizing together. I designed a responsive workflow that helps Webflow users prepare images for the web while keeping control over quality and dimensions.</p>
+      <dl class="case-meta">
+        <div><dt><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#briefcase"/></svg>Role</dt><dd>Product Designer</dd></div>
+        <div><dt><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#code"/></svg>Platform</dt><dd>Responsive web app</dd></div>
+        <div><dt><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#layers"/></svg>Scope</dt><dd>Discovery · Feature design · Prototyping</dd></div>
+      </dl>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://www.figma.com/design/Y1x4acw534fKBAmdLMtuzI/CompresFlow_LauraLlavador_Final?m=auto&amp;t=eceRPB2Yg10zjkMi-6" target="_blank" rel="noopener">Open the Figma prototype <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="#compressflow-screens">Explore the final screens <span aria-hidden="true">↓</span></a>
       </div>
-      <p style="max-width:38ch;color:var(--ink-soft);font-weight:300;font-size:.95rem">Design Thinking methodology to ensure the solution addressed real user problems.</p>
-    </div>
-    <div class="steps steps-4" data-stagger>
-      <div class="step reveal">
-        <span class="step-num">1</span>
-        <h4>Discovery</h4>
-        <p>Analysis of current Webflow metrics and interviews to identify friction points.</p>
-        <div class="mini"><span>User interviews</span><span>Data analysis</span></div>
-      </div>
-      <div class="step reveal">
-        <span class="step-num">2</span>
-        <h4>Definition</h4>
-        <p>Empathy maps and user journeys to ideate user-centered solutions.</p>
-        <div class="mini"><span>User journey</span><span>Wireframing</span></div>
-      </div>
-      <div class="step reveal">
-        <span class="step-num">3</span>
-        <h4>Design &amp; prototyping</h4>
-        <p>Development of a design system and interactive prototypes for usability testing.</p>
-        <div class="mini"><span>Figma</span><span>Design system</span></div>
-      </div>
-      <div class="step reveal">
-        <span class="step-num">4</span>
-        <h4>Validation</h4>
-        <p>Usability tests with the prototype, iterating based on the results.</p>
-        <div class="mini"><span>Usability testing</span><span>A/B testing</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= SCREENS ================= -->
-<section>
-  <span class="sec-num">03</span>
-  <div class="container">
-    <div class="sec-head reveal">
-      <div>
-        <p class="sec-label">03 — The solution</p>
-        <h2 class="sec-title">Final <em>screens</em></h2>
+    <figure class="shell case-cover">
+      <img src="asset/webflow/webflowmain.png" width="3594" height="1978" alt="Two mobile screens from the CompressFlow image optimization tool" fetchpriority="high">
+      <figcaption>The CompressFlow workflow on mobile.</figcaption>
+    </figure>
+
+    <div class="shell case-body">
+      <section class="case-section" aria-labelledby="compressflow-problem">
+        <div class="case-section-head">
+          <span class="section-mark"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#target"/></svg></span>
+          <p class="case-section-label">01 / Problem &amp; solution</p>
+          <h2 id="compressflow-problem">Make image prep less manual.</h2>
+        </div>
+        <div class="insight-grid">
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#search"/></svg></span>
+            <h3>The problem.</h3>
+            <p>Large images can slow Webflow sites. Optimizing each asset by hand adds repeated work and can lead to inconsistent results across devices.</p>
+          </article>
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#check"/></svg></span>
+            <h3>The solution.</h3>
+            <p>CompressFlow automates image conversion, compression and resizing in one workflow, with controls for format, dimensions and quality. The aim was to save preparation time and deliver smaller images ready for the web.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-section--band" aria-labelledby="compressflow-process">
+        <div class="case-section-head">
+          <span class="section-mark"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#compass"/></svg></span>
+          <p class="case-section-label">02 / Design process</p>
+          <h2 id="compressflow-process">From research to a tested prototype.</h2>
+        </div>
+        <div class="insight-grid">
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#search"/></svg></span>
+            <h3>01 Discovery.</h3>
+            <p>I analyzed existing Webflow metrics and interviewed users to find where image preparation was slowing their work.</p>
+          </article>
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#layers"/></svg></span>
+            <h3>02 Definition.</h3>
+            <p>I used empathy maps and user journeys to map the path from choosing an image to preparing it for publication. Wireframes helped me explore where format, dimensions and quality controls should appear.</p>
+          </article>
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#pen"/></svg></span>
+            <h3>03 Design and prototyping.</h3>
+            <p>I built a design system and used it to create interactive, responsive prototypes in Figma.</p>
+          </article>
+          <article class="insight-card">
+            <span class="icon-badge"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#check"/></svg></span>
+            <h3>04 Validation.</h3>
+            <p>I tested the prototype with users and iterated on the sequence based on what I observed. The validation methods included usability and A/B testing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="compressflow-design">
+        <div class="case-section-head">
+          <span class="section-mark"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#pen"/></svg></span>
+          <p class="case-section-label">03 / Interaction design</p>
+          <h2 id="compressflow-design">Adjust the image beside its preview.</h2>
+        </div>
+        <div class="case-copy">
+          <p>The desktop design places the controls beside the image. A visual preview lets users see what their changes mean for the asset before they apply them. On mobile, the same actions are broken into focused screens for upload, settings and review.</p>
+        </div>
+        <figure class="case-figure">
+          <a class="case-image-link" href="asset/webflow/compressflow1.png" target="_blank" rel="noopener" aria-label="Open the full-size CompressFlow desktop mockup">
+            <img src="asset/webflow/compressflow1.png" width="3867" height="2187" alt="CompressFlow desktop resize settings next to the image preview" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Desktop resize controls and preview in the same workspace.</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section case-section--band" id="compressflow-screens" aria-labelledby="compressflow-screens-title">
+        <div class="case-section-head">
+          <span class="section-mark"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="asset/portfolio-icons.svg#layers"/></svg></span>
+          <p class="case-section-label">04 / Final screens</p>
+          <h2 id="compressflow-screens-title">The mobile workflow, from sign-in to review.</h2>
+        </div>
+        <div class="case-copy">
+          <p>The mobile flow breaks image preparation into individual decisions. Choose the format, add images, check compression results and compare the output before resizing or downloading.</p>
+          <p>Select an image to see the full-size screen.</p>
+        </div>
+        <div class="case-grid case-phone-grid case-gallery-4">
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/webflow/compress1.png" target="_blank" rel="noopener" aria-label="Open the full-size sign-in screen">
+              <img src="asset/webflow/compress1.png" width="1125" height="2436" alt="CompressFlow mobile sign-in with Google and email options" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>01 Sign in.</strong> The entry screen offers Google and email sign-in.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/webflow/compress2.png" target="_blank" rel="noopener" aria-label="Open the full-size format selection screen">
+              <img src="asset/webflow/compress2.png" width="1125" height="2436" alt="JPEG and PNG format cards on the CompressFlow mobile start screen" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>02 Choose a format.</strong> Separate JPEG and PNG cards explain the starting options.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/webflow/compress3.png" target="_blank" rel="noopener" aria-label="Open the full-size image upload screen">
+              <img src="asset/webflow/compress3.png" width="1125" height="2436" alt="Mobile JPEG upload screen with an Add images control" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>03 Add images.</strong> A dedicated upload screen starts JPEG compression.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/webflow/compres4.png" target="_blank" rel="noopener" aria-label="Open the full-size batch results screen">
+              <img src="asset/webflow/compres4.png" width="1125" height="2436" alt="Mobile batch compression results with file sizes and a Download all control" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>04 Check the batch.</strong> See the results for each image and download the group together.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/webflow/compress5.png" target="_blank" rel="noopener" aria-label="Open the full-size lighthouse comparison screen">
+              <img src="asset/webflow/compress5.png" width="1125" height="2436" alt="A lighthouse photo split into original and optimized previews" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>05 Compare the result.</strong> The split preview shows the original and optimized lighthouse photo.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/webflow/compress6.png" target="_blank" rel="noopener" aria-label="Open the full-size second image comparison screen">
+              <img src="asset/webflow/compress6.png" width="1125" height="2436" alt="Original and optimized versions of an interior photo with batch thumbnails underneath" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>06 Review the next image.</strong> Thumbnails switch the comparison to another file in the batch.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/webflow/compress7.png" target="_blank" rel="noopener" aria-label="Open the full-size resize settings screen">
+              <img src="asset/webflow/compress7.png" width="1125" height="2436" alt="Mobile resize dialog with width, height and aspect ratio controls" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>07 Set the dimensions.</strong> Enter the new width and height and choose whether to preserve the aspect ratio.</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <a class="case-image-link" href="asset/webflow/compress8.png" target="_blank" rel="noopener" aria-label="Open the full-size resized image preview screen">
+              <img src="asset/webflow/compress8.png" width="1125" height="2436" alt="Mobile resized lighthouse preview with options to download or resize again" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>08 Review the resized image.</strong> Download the result or return to the resize controls.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>Laura Llavador · Senior Product Designer</span>
+      <div class="footer-links">
+        <a href="mailto:lauxllavador@gmail.com">Email <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/laurallavadorgarcia/">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://www.behance.net/laurallavador">Behance <span aria-hidden="true">↗</span></a>
+        <a href="asset/LauraLlavadorCV.pdf">CV <span aria-hidden="true">↗</span></a>
       </div>
-      <a class="sec-link" href="https://www.figma.com/design/Y1x4acw534fKBAmdLMtuzI/CompresFlow_LauraLlavador_Final?m=auto&t=eceRPB2Yg10zjkMi-6" target="_blank" rel="noopener">Open prototype ↗</a>
-    </div>
-    <div class="screens reveal">
-      <figure><img src="asset/webflow/compress1.png" alt="CompressFlow screen 1" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/webflow/compress2.png" alt="CompressFlow screen 2" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/webflow/compress3.png" alt="CompressFlow screen 3" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/webflow/compress4.png" alt="CompressFlow screen 4" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/webflow/compress5.png" alt="CompressFlow screen 5" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/webflow/compress6.png" alt="CompressFlow screen 6" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/webflow/compress7.png" alt="CompressFlow screen 7" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-      <figure><img src="asset/webflow/compress8.png" alt="CompressFlow screen 8" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-    </div>
-    <p class="drag-hint">( drag / scroll → )</p>
-  </div>
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="compact">
-  <div class="sunset"></div>
-  <span class="ff" style="left:22%;top:34%;animation-duration:12s,3.2s;animation-delay:-4s,-1s"></span>
-  <span class="ff" style="left:74%;top:28%;animation-duration:10s,2.6s;animation-delay:-2s,-.5s"></span>
-  <span class="ff" style="left:56%;top:60%;animation-duration:14s,3.8s;animation-delay:-7s,-1.9s"></span>
-  <div class="container contact-inner">
-    <p class="sec-label contact-label reveal">Contact</p>
-    <div class="contact-ctas reveal">
-      <a class="btn btn-sand magnetic" href="mailto:lauxllavador@gmail.com">lauxllavador@gmail.com <span class="arr">↗</span></a>
-      <a class="btn btn-line magnetic" href="index.html">Back to home <span class="arr">→</span></a>
-    </div>
-    <div class="contact-meta reveal">
-      <a href="https://www.linkedin.com/in/laurallavadorgarcia/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://www.behance.net/laurallavador" target="_blank" rel="noopener">Behance ↗</a>
-      <span>Valencia, Spain</span>
-    </div>
-  </div>
-   <footer>
-    <div class="container foot-inner">
-      <span>© 2026 Laura Llavador — All rights reserved</span>
     </div>
   </footer>
-</section>
-
-</main>
-<script src="main.js"></script>
 </body>
 </html>
